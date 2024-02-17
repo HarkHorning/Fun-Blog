@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contemporary Wizard</title>
+</head>
+<body>
+    <section class="main-section">
+        <a href="/" class="return-button"><-- Home Page</a>
+        <div href="" class="blog-card">
+            <h2 class="blog-title"><%= data.title %></h2>
+            <h3 class="blog-content one"><%= data.content %></h3>
+            <h4 class="blog-content two"><%= data.contentTwo %></h4>
+            <h5 class="blog-content three"><%= data.contentThree %></h5>
+            <h6 class="blog-content four"><%= data.contentFour %></h6>
+        </div>
+    </section>
+
+    <style>
+        * {
+            font-family: 'Inter';font-size: 22px;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            /* background: linear-gradient(150deg, #2c2f57,#21273f); */
+            background-color: rgb(238, 236, 232);    
+            min-height: 100svh;
+            position: relative;
+            padding-top: 5rem;
+        }
+        .blog-title {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+        }
+        .blog-content {
+            font-size: 1.25rem;
+            font-weight: 500;
+            line-height: 2rem;
+        }
+        .main-section {
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* align-items: center; */
+            padding: 1.5rem;
+            height: 100%;
+        }
+        .return-button {
+            position: absolute;
+            top: 2.5rem;
+            left: 2.5rem;
+            border: none;
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 1rem;
+            font-weight: 900;
+            color: rgb(129, 129, 129);
+            text-decoration: none;
+        }
+    </style>
+</body>
+</html>

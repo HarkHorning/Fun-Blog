@@ -1,0 +1,18 @@
+<div class="blog-cards">
+    <ul>
+        <% posts.forEach(post => { %>
+                <a href="/post/<%= post._id %>" >
+                    <div class="blog-card">
+                        <div class="card-left">
+                            <li>
+                                <h2 class="blog-title"><%= post.title %></h2>
+                                <h3 class="blog-content"><%= post.content.substring(0, 210) %>...</h3>
+                            </li>
+                        </div>
+                        <!-- <div class="blog-date">2/11/24</div> -->
+                        <div class="blog-date"><%= post.createdAt.toDateString() %></div>
+                    </div>
+                </a>       
+        <% }) %>
+    </ul>
+</div>
