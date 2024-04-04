@@ -7,11 +7,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const aboutSection = document.getElementById('aboutSection');
     const wizard = document.getElementById('wizImage');
     const backgroundStar = document.getElementById('backgroundStar');
+    const backgroundStarLarge = document.getElementById('backgroundStarLarge');
+    const backgroundMoon = document.getElementById('backgroundMoon');
 
     aboutButton.addEventListener('click', function() {
         aboutSection.style.display = 'contents';
         homeButton.className = 'button';
         aboutButton.className = 'button-selected';
+    })
+
+    window.addEventListener('scroll', function () {
+        let amountScrolled = window.scrollY;
+        backgroundStar.style.transform = `translateY(${amountScrolled / 1.75}px)`;
+        backgroundStarLarge.style.transform = `translateY(${amountScrolled / 1.5}px)`;
+        backgroundMoon.style.transform = `translateY(${amountScrolled / 1.15}px)`;
     })
 
     contactButton.addEventListener('click', function() {
