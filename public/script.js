@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', function () {
         let amountScrolled = window.scrollY;
-        backgroundStar.style.transform = `translateY(${amountScrolled / 1.75}px)`;
+        backgroundStar.style.transform = `translateY(${amountScrolled}px)`;
         backgroundStarLarge.style.transform = `translateY(${amountScrolled / 1.5}px)`;
-        backgroundMoon.style.transform = `translateY(${amountScrolled / 1.15}px)`;
+        backgroundMoon.style.transform = `translateY(${amountScrolled / 1.8}px)`;
     })
 
     contactButton.addEventListener('click', function() {
