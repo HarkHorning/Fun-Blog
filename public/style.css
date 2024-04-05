@@ -228,9 +228,15 @@ body {
 
                             /* contents */
 .blog-cards {
+    width: 100%;
     margin-top: 1rem;
     border-left: 1px solid rgba(211, 211, 211, 0.568);   
     /* box-shadow: var(--shadow);  */
+    display: flex;
+}
+
+.list {
+    width: 75%;
 }
 
 .blog-card {
@@ -263,8 +269,33 @@ body {
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 100;
-    width: 90%;
+    width: 96%;
     padding-left: 0.5rem;
+}
+
+.joinOutline {
+    width: 25%;
+    height: 5rem;
+    border: 1px solid black;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.email-search {
+    width: 10rem;
+    font-size: 1rem;
+    background-color: rgba(224, 224, 224, 0.6);
+    color: black;
+    border: 1px solid rgb(3, 3, 3);
+    border-radius: 5px;
+    padding-left: .25rem;
+    text-align: start;
+}
+
+.joinEmailText {
+    font-size: 0.9rem;
+    font-weight: 100;
 }
 
                             /* About page */

@@ -1,12 +1,12 @@
 <div class="blog-cards">
-    <ul>
+    <ul class="list">
         <% posts.forEach(post => { %>
                 <a href="/post/<%= post._id %>" >
                     <div class="blog-card">
                         <div class="card-left">
                             <li>
                                 <h2 class="blog-title"><%= post.title %></h2>
-                                <h3 class="blog-content"><%= post.content.substring(0, 210) %>...</h3>
+                                <h3 class="blog-content"><%= post.content.substring(0, 180) %>...</h3>
                             </li>
                         </div>
                         <!-- <div class="blog-date">2/11/24</div> -->
@@ -15,4 +15,8 @@
                 </a>       
         <% }) %>
     </ul>
+    <form class="joinOutline">
+        <h1 class="joinEmailText">Join News Letter</h1>
+        <input name="searched" placeholder="Your email" class="email-search">
+    </form>
 </div>
