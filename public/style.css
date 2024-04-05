@@ -18,6 +18,7 @@ a {
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background: linear-gradient(150deg, #2c2f57,#21273f); */
@@ -30,15 +31,18 @@ body {
 }
 
 .login-bar {
-    position: absolute;
-    top: 0;
-    width: 100%;
+    width: 99%;
     z-index: 1;
-    border-bottom: 1px solid black;
-    /* background-color: rgb(179, 96, 82); */
+    /* border-bottom: 1px solid black; */
+    /* background-color: rgba(0, 29, 156, 0.089); */
+    background-image: linear-gradient(90deg, rgba(0, 29, 156, 0.1), rgba(0, 29, 156, 0), rgba(0, 29, 156, 0.1));
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.login-bar-content {
+    font-size: 0.75rem;
 }
 
 .moon-background {
@@ -101,7 +105,7 @@ body {
 
                             /* header */
 .header {
-    margin-top: 1.5rem;
+    margin-top: 0.25rem;
     width: 100%;
     display: grid;
     grid-template-columns: 5fr 1fr;
