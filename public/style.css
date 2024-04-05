@@ -29,6 +29,18 @@ body {
 
 }
 
+.login-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 1px solid black;
+    /* background-color: rgb(179, 96, 82); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .moon-background {
     position: absolute;
     top: 55%;
@@ -52,6 +64,13 @@ body {
     right: 1%;
     opacity: 1;
     z-index: -1;
+}
+
+.tower-background {
+    position: absolute;
+    bottom: 0;
+    right: 35%;
+    opacity: 0.5;
 }
 
 .svg-object {
@@ -117,6 +136,7 @@ body {
     position: absolute;
     top: -1.25rem;
     left: 4.85rem;
+    z-index: 2;
 }
 
 .flip {
