@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const star = document.getElementById('star');
     const aboutSection = document.getElementById('aboutSection');
     const wizard = document.getElementById('wizImage');
-    const backgroundStar = document.getElementById('backgroundStar');
     const backgroundStarLarge = document.getElementById('backgroundStarLarge');
     const backgroundMoon = document.getElementById('backgroundMoon');
 
@@ -18,9 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', function () {
         let amountScrolled = window.scrollY;
-        backgroundStar.style.transform = `translateY(${amountScrolled}px)`;
         backgroundStarLarge.style.transform = `translateY(${amountScrolled / 1.5}px)`;
-        backgroundMoon.style.transform = `translateY(${amountScrolled / 1.8}px)`;
+        backgroundMoon.style.transform = `translateY(${amountScrolled / 2}px)`;
     })
 
     contactButton.addEventListener('click', function() {
