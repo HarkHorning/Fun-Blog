@@ -22,11 +22,11 @@ connectDB()
 
 
 const article = new Blog({
-    title: '',
+    title: 'By Popular Demand, More Placeholder Content!',
     slug: '',
     published: true,
     author: 'Hark Horning',
-    content: '',
+    content: 'The outpooring of people asking for more placeholder content is truly humbling. So, in the interest of pleasing my non-existant readership, here you go. Placeholder content.',
     contentTwo: '',
     contentThree: '',
     contentFour: '',
