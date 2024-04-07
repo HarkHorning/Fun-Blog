@@ -32,6 +32,7 @@ body {
 
 .login-bar {
     width: 99%;
+    max-height: 1.25rem;
     z-index: 1;
     /* border-bottom: 1px solid black; */
     /* background-color: rgba(0, 29, 156, 0.089); */
@@ -88,6 +89,8 @@ body {
 
 .svg-object {
     position: absolute;
+    height: 0;
+    width: 0;
 }
 
 .filter-object {
@@ -170,11 +173,16 @@ body {
     }
 }
 
-.wiz-img {
-    border: 2px solid rgb(0, 0, 0);
+.wiz-link {
     width: 100%;
     grid-row: span 2;
     transform: rotate(2deg);
+}
+
+.wiz-img {
+    border: 2px solid rgb(0, 0, 0);
+    width: 100%;
+    
 
 }
 
@@ -361,20 +369,68 @@ p {
 
                             /* admin page */
 
+.log-body {
+    background-color: rgb(242, 242, 242);
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    border-radius: 0.25rem;
+}
+
 .form-layout {
     display: flex;
     flex-direction: column;
+    min-width: 15rem;
+}
+
+.page-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: rgb(50, 50, 50);
+}
+
+.log-label {
+    font-size: 1rem;
+    color: rgb(93, 93, 93);
+    border-bottom: 0;
 }
 
 .form-itself {
     display: grid;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .form-input {
     padding: 0.15rem;
     border-radius: 5px;
     color: black;
+    margin-bottom: 0.75rem;
+
+}
+
+.not-finished {
+    opacity: 0.6;
+}
+
+.sign-button {
+    height: 1.5rem;
+    background-color: rgb(110, 110, 199);
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+}
+
+.create-option {}
+
+.create-link {
+    text-decoration: underline;
+    color: rgb(40, 40, 138);
 }
 
 /* media query */

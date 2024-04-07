@@ -8,17 +8,23 @@
     <title>admin</title>
 </head>
 <body>
+    <svg class="svg-object">
+        <filter id="filter-effect">
+            <feTurbulence type="fractalNoise" baseFrequency="1"/>
+        </filter>
+    </svg>
+    <div class="filter-object"></div>
     <section class="home-section">
         <h1>Welcome!</h1>
         <div class="form-layout">
-            <form class="form-itself" action="/create" method="GET">
-                <label for="title"><b>Title</b></label>
-                <input class="form-input" type="text" placeholder="Enter Name" name="title">
+            <form class="form-itself" action="/login" method="GET">
+                <label for="userName"><b>Name</b></label>
+                <input class="form-input" type="text" placeholder="Enter Name" name="userName">
               
-                <label for="content"><b>Content</b></label>
-                <textarea placeholder="Add content" class="form-input" name="content" id="contentsinput" cols="30" rows="10"></textarea>
+                <label for="Password"><b>Password</b></label>
+                <input placeholder="Password" class="form-input" name="Password" id="contentsinput"></input>
 
-                <input type="submit" value="Create" class="button-select">
+                <input type="submit" value="Sign In" class="button-select">
             </form>
         </div>
     </section>

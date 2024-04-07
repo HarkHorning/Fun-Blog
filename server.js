@@ -35,11 +35,10 @@ const article = new Blog({
 })
 // article.save();
 
-const createUser = new Login({
-    username: 'temporary wizard',
-    password: 'password?123?',
-})
-// createUser.save();
+// const createUser = new Login({
+//     username: 'temporary wizard',
+//     password: 'password?123?',
+// })
 
 
 //end of mongoose stuff
@@ -79,25 +78,42 @@ app.get('/post/:id', async (req, res) => {
 })
 
 //login
-// app.get('/loginTemp', async (req, res) => {
-//     res.render('loginTemp.ejs', {
-//     });
-// })
+app.get('/loginTemp', async (req, res) => {
+    res.render('loginTemp.ejs', {
+    });
+})
 
-// app.get('/login', async (req, res) => {
-//     const userName = req.query.userName;
-//     const password = req.query.password;
-//     const loginInfo = await Login.find();
+app.get('/login', async (req, res) => {
+    const username = req.query.userName;
+    const password = req.query.password;
+    const loginInfo = await Login.find();
+    // console.log(loginInfo.length);
+    // for (let i = 0; i <= 2; i++) {
+        if (username === loginInfo[0].username && password === loginInfo[0].password) {
+            res.render('success.ejs')
+        } else {
+            res.render('failure.ejs')
+        }
+    // }
+})
 
-//     if (userName === loginInfo[0].username && password === loginInfo[0].password) {
-//         res.redirect('/workshop')
-//     } else {
-//         res.render('/')
-//     }
-// })
+//CreateAccount
+app.get('/createAccount', async (req, res) => {
+    res.render('createAccount.ejs', {
+    });
+})
 
-
-
+app.get('/signup', async (req, res) => {
+    const username = req.query.userName;
+    const password = req.query.password;
+    const createUser = new Login({
+        username: username,
+        password: password,
+    })
+    createUser.save();
+    res.render('loginTemp.ejs', {
+    });
+})
 
 // workshop
 app.get('/workshop', async (req, res) => {
