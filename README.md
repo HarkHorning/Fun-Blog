@@ -2,6 +2,6 @@
 
 ## I used ejs, node, express, and mongoDB
 
-This dynamic website is stores it's blog content on a MongoDB database.
+This dynamic website is stores it's blog content on a MongoDB database. Some login features are currently enabled. User account creation and features are coming soon.
 
-meant as a fun blog concept for me to develope further in the future.
+This project is meant as a fun blog concept for me to develope further in the future.
