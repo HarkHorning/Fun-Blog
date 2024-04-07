@@ -2,4 +2,6 @@
 
 ## I used ejs, node, express, and mongoDB
 
-This project includes both user account creation and sign in authentication and blog post backend storage. it's meant as a fun blog concept I may develope further in the future.
+This dynamic website is stores it's blog content on a MongoDB database.
+
+meant as a fun blog concept for me to develope further in the future.
