@@ -291,13 +291,21 @@ body {
     padding-left: 0.5rem;
 }
 
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 1rem;
+}
+
 .joinOutline {
-    width: 25%;
+    width: min-content;
     height: 5rem;
     border: 1px solid black;
     /* background-color: rgba(255, 255, 255, 0.1); */
     border-radius: 10px;
     padding: 5px;
+
 }
 
 .alert {
@@ -324,6 +332,13 @@ body {
     font-weight: 100;
     margin-top: 0.5rem;
     opacity: 0.5;
+}
+
+.add {
+    width: 100%;
+    height: 20rem;
+    border: 1px solid black;
+    color: rgb(59, 59, 59);
 }
 
                             /* About page */
