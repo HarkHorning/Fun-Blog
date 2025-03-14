@@ -33,12 +33,7 @@ const article = new Blog({
     createdAt: Date.now(),
     editedAt: Date.now()
 })
-// article.save();
 
-// const createUser = new Login({
-//     username: 'temporary wizard',
-//     password: 'password?123?',
-// })
 
 
 //end of mongoose stuff
