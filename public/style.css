@@ -276,7 +276,7 @@ body {
 
 .blog-date {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 200;
     color: rgba(240, 240, 240, 0.479);
     width: 25%;
     position: absolute;
@@ -380,6 +380,10 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#date {
+    padding-left: 0.5rem;
+    color: white;
 }
 
                             /* admin page */
