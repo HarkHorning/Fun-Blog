@@ -1,10 +1,15 @@
+# Node Docker
 
-FROM Node:22
+# Verion of node
+FROM node:current-slim
 
+# Directory
 WORKDIR /blog-site
 
+# package
 COPY package*.json ./
 
+# 
 RUN npm install
 
 COPY . .
@@ -13,4 +18,5 @@ ENV PORT=8080
 
 EXPOSE 8080
 
-CMD ["npm", "start "]
+# Docker command
+CMD ["npm", "start"]
