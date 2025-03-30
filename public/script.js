@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 clearInterval(timer);
             }, 2500);
         } 
-        if (picker >= 0.8) {
+        if (picker >= 0.6) {
             wizard.classList.add('flip');
             const timer = setInterval(() => {
                 wizard.classList.remove('flip');

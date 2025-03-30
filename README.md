@@ -11,3 +11,9 @@ This project both includes user account creation and sign in authentication and 
 docker build -t wiz_blog_dockerfile .
 
 docker run -p 8080:8080 wiz_blog_dockerfile
+
+### Animations and viduals to add later
+
+Sparkly curser animation
+
+wizard image hover over effect -- fire
