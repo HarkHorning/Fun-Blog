@@ -1,7 +1,7 @@
 # Node Docker
 
 # Verion of node
-FROM node:current-slim
+FROM node:alpine
 
 # Directory
 WORKDIR /blog-site
